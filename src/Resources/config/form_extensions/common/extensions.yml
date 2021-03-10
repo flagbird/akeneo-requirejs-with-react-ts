@@ -1,0 +1,25 @@
+extensions:
+  # Navigation element
+  app-custom-root-element:
+    module: pim/menu/tab
+    parent: pim-menu
+    targetZone: mainMenu
+    position: 150
+    config:
+      title: 'Root'
+      iconModifier: iconCard
+      to: app_index
+
+  app-custom-page-breadcrumbs:
+    module: pim/common/breadcrumbs
+    parent: app-custom-index
+    targetZone: breadcrumbs
+    config:
+      tab: app-custom-root-element
+#        item: app-custom-sub-element
+
+  # form builder used in controller
+  app-custom-index:
+    module: pim/common/simple-view
+    config:
+      template: pim/template/common/default-template

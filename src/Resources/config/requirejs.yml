@@ -1,0 +1,12 @@
+config:
+  config:
+    pim/controller-registry:
+      controllers:
+        app_index:
+          module: app/controller/common/index
+#          aclResourceId: pim_importexport_import_profile_index
+          config:
+            form_builder_name: "app-custom-index"
+
+  paths:
+    app/controller/common/index: app/js/controller/common/index

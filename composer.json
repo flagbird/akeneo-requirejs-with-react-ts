@@ -1,0 +1,20 @@
+{
+    "name": "flagbird/akeneo-requirejs-with-react-ts",
+    "description": "An example bundle for using mostly Typescript and React instead of RequireJS in Akeneo",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claudio Zizza",
+            "email": "zizza@flagbit.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Flagbird\\": "src/"
+        }
+    },
+    "require": {
+        "akeneo/pim-community-dev": "^5.0"
+    }
+}
